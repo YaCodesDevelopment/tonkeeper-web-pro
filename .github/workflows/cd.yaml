@@ -10,7 +10,7 @@ jobs:
                 os: [ubuntu-latest, macos-13, windows-latest]
                 node-version: [20.11.1]
 
-        runs-on: ${{ matrix.os }}
+        runs-on: self-hosted #${{ matrix.os }}
         timeout-minutes: 30
         env:
             APPLE_API_KEY: ${{ github.workspace }}/AuthKey.p8
