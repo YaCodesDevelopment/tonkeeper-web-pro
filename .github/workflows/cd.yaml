@@ -1,8 +1,7 @@
 name: Tonkeeper CD
 on:
     push:
-        tags:
-            - v*
+
 jobs:
     desktop-build:
         name: desktop-build
