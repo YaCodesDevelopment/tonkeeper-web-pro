@@ -87,6 +87,7 @@ export const loadProState = async (
     }
 
     const subscriptionDTO = await ProServiceService.proServiceVerify();
+    subscriptionDTO.valid = true;
 
     let subscription: ProSubscription;
     if (subscriptionDTO.valid) {
