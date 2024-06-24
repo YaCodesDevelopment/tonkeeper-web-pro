@@ -87,6 +87,8 @@ export const loadProState = async (
     }
 
     const subscriptionDTO = await ProServiceService.proServiceVerify();
+
+    // Workaround before we host our own API
     subscriptionDTO.valid = true;
 
     let subscription: ProSubscription;
